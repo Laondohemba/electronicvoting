@@ -1,0 +1,151 @@
+:root{
+  --primary-color:hsl(0, 0%, 0%);
+  --secondary-color:hsl(215, 60%, 11%);
+  --other-color:hsl(212, 53%, 25%);
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(../fonts/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto[wdth\wght].ttf);
+}
+* {
+  font-family: Poppins, Merriweather, Roboto !important;
+  font-size: 1rem;
+  margin-top: 0;
+}
+.whole_page {
+  background-color: var(--secondary-color) !important;
+  height: fit-content;
+}
+.head {
+  background-color: var(--primary-color) !important;
+  min-height: 50px;
+}
+.my-container {
+  padding: 3% 15%;
+}
+.welcome-container {
+  background: linear-gradient(30deg, hsl(201, 96%, 18%), hsl(201, 77%, 32%));
+}
+.sections {
+  display: flex;
+  justify-content: flex-end;
+}
+.sections li {
+  list-style: none;
+  min-width: fit-content;
+}
+.sections li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+}
+.banner {
+  position: relative;
+}
+.img_cont {
+  height: 20%;
+  width: 18%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.head {
+  margin: 0;
+  padding: 0;
+}
+.btn_color {
+  background-color: rgb(23, 0, 46) !important;
+  color: #fff !important;
+}
+.linkedin {
+  color: blue;
+  font-size: 40px;
+  margin-right: 10px;
+}
+.github {
+  font-size: 40px;
+  margin-right: 10px;
+}
+.whatsapp {
+  color: rgb(0, 189, 7);
+  font-size: 40px;
+  margin-right: 10px;
+}
+.h5_message {
+  margin-bottom: -10px;
+}
+.line_cont {
+  width: 93%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -15px;
+}
+.line_cont .word {
+  margin: 0 13px;
+  color: rgb(23, 0, 46);
+}
+.line {
+  height: 1px;
+  width: 44%;
+  background-color: rgb(23, 0, 46);
+}
+.modal_text {
+  color: rgb(23, 0, 46);
+}
+.toast-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+@media (max-width: 700px) {
+  .x-small {
+    max-width: 80%;
+    margin: auto;
+  }
+  .my-container {
+    padding: 3% 10%;
+  }
+  .name {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 500px) {
+  * {
+    font-size: 0.85rem;
+  }
+  .sections li a {
+    margin: 0 6px;
+  }
+  .social_links a {
+    font-size: 0.6rem;
+  }
+  .linkedin,
+  .github,
+  .whatsapp {
+    font-size: 25px;
+  }
+  .my-container {
+    padding: 3% 0;
+  }
+}
+@media (min-width: 700px) {
+  .head {
+    padding-left: 2%;
+    padding-right: 0;
+  }
+}
+@media (max-width: 350px) {
+  .sections li a {
+    margin: 0 3px;
+  }
+}
